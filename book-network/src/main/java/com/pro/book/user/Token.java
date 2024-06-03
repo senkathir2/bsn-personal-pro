@@ -10,12 +10,13 @@ import java.time.LocalDateTime;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+//@Entity
 public class Token {
 
     @Id
     @GeneratedValue
     private Integer id;
+
     private String token;
     private LocalDateTime createdAt;
     private LocalDateTime expiresAt;
